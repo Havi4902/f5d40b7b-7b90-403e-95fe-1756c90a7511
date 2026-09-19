@@ -1,0 +1,7 @@
+{
+  "issueLink": "https://github.com/pyvista/pyvista/issues/7786",
+  "prLink": "https://github.com/pyvista/pyvista/pull/7787",
+  "artifactType": "gif",
+  "justification": "Setting global_theme.cmap to a matplotlib Colormap instance at base.sha raises a TypeError regression from pyvista 0.46, preventing users from applying custom colormaps to plots — the chosen colormap is silently not applied.",
+  "piiAck": true
+}
