@@ -1,0 +1,7 @@
+{
+  "issueLink": "https://github.com/pyvista/pyvista/issues/7963",
+  "prLink": "https://github.com/pyvista/pyvista/pull/8116",
+  "artifactType": "gif",
+  "justification": "The Chart2D.legend property at base.sha raises PyVistaAttributeError instead of returning the legend object, making the legend inaccessible for configuration despite GetLegend() working correctly on the same chart.",
+  "piiAck": true
+}
