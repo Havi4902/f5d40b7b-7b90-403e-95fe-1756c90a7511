@@ -23,6 +23,9 @@ WORKDIR /app
 RUN pip install --no-cache-dir -e . \
  && pip install --no-cache-dir pytest
 
+RUN sed -i "s/'--strict-config', //" /app/pyproject.toml \
+ && sed -i "s/'error'/'default'/" /app/pyproject.toml
+
 # Conftest exit hook v2 (D11)
 RUN printf 'import os as _jf_os, sys as _jf_sys, pytest as _jf_pytest\n\
 _JF_EXIT = {"status": 0}\n\

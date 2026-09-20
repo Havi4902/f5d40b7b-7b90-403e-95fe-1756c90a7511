@@ -1,7 +1,7 @@
 {
   "issueLink": "https://github.com/pyvista/pyvista/issues/7998",
   "prLink": "https://github.com/pyvista/pyvista/pull/8000",
-  "artifactType": "gif",
+  "artifactType": "video",
   "justification": "The get_data_range method at base.sha returns (nan, nan) for boolean scalar arrays instead of the expected (False, True), causing scalar bar range labels to display NaN values and rendering the colorbar unreadable.",
   "piiAck": true
 }
